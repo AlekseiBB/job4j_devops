@@ -24,3 +24,4 @@ class CalcApplicationTests {
         assertThat(output.getBody()).isEqualTo(expected);
     }
 }
+

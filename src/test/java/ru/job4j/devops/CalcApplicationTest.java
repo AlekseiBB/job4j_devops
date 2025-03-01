@@ -14,6 +14,4 @@ class CalcApplicationTests {
     void mainMethodTest() {
         CalcApplication.main(new String[] {});
     }
-
 }
-

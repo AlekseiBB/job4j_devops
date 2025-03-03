@@ -60,10 +60,9 @@ pipeline {
     always {
         script {
             def buildInfo = "Build number: ${currentBuild.number}\n" +
-                            "Build status: ${currentBuild.result}\n" +
+                            "Build status: ${currentBuild.currentResult}\n" +
                             "Started at: ${new Date(currentBuild.startTimeInMillis)}\n" +
                             "Duration so far: ${currentBuild.durationString}"
-            echo "Build result: ${currentBuild.result}" // Выводим в консоль
             telegramSend(message: buildInfo)
         }
     }

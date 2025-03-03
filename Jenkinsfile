@@ -64,7 +64,7 @@ pipeline {
                                 "Started at: ${new Date(currentBuild.startTimeInMillis)}\n" +
                                 "Duration so far: ${currentBuild.durationString}"
                 telegramSend(
-                    chatId: 7522456994
+                    chatId: '7522456994',
                     message: buildInfo)
             }
         }
